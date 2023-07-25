@@ -12,7 +12,7 @@ const questions = [
   {
     type: "input",
     message: "What color would you like for your shape?",
-    name: "shapecolor"
+    name: "color"
   },
   {
     type: "input",
@@ -29,13 +29,13 @@ const questions = [
 inquirer.prompt(questions).then(res=>{
   let shape;
   if(res.shape==="Circle"){
-      shape=new Circle(res.shapecolor, res.text, res.textcolor)
+      shape=new Circle(res.color, res.text, res.textcolor)
   };
-  if(res.shape==="Triangle"){
-      shape=new Triangle(res.shapecolor, res.text, res.textcolor)
-  }; 
   if(res.shape==="Square"){
-      shape=new Square(res.shapecolor, res.text, res.textcolor)
+      shape=new Square(res.color, res.text, res.textcolor)
+  }; 
+  if(res.shape==="Triangle"){
+      shape=new Triangle(res.color, res.text, res.textcolor)
   };
   fs.writeFileSync("./examples/logo.svg",shape.render())
 })
