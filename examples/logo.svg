@@ -1,1 +1,1 @@
-<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="80" fill="black"/><text x="150" y="125" font-size="60" text-anchor="middle" fill="red">ftp</text></svg>
+<svg width="500" height="400" version="1.1" xmlns="http://www.w3.org/2000/svg"><polygon points="250,60 100,400 400,400" class"triangle" fill="green"/><text x="250" y="300" font-size="60" text-anchor="middle" fill="white">sig</text></svg>
